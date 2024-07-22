@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="./main.js"></script>
+    <script src="firebase-config.js" type="module" defer></script>
+    <script src="coffee-preference.js" type="module" defer></script>
+</head>
+<body>
+    <h1>환영합니다!</h1>
+    <p>사용자 명: <span id="userName"></span></p>
+    <button id="logout">로그아웃</button>
+
+    <h1>오늘의 커피</h1>
+    <p id="coffeeRecommendation">Loading...</p>
+    <div>
+        <h2>Select Your Preferred Coffee:</h2>
+        <button id="hotCoffeeButton">Hot Coffee</button>
+        <button id="icedCoffeeButton">Iced Coffee</button>
+    </div>
+</body>
+</html>
